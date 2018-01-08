@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff"
+    >
+
+
+    <ImageView
+        android:id="@+id/dialogimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        app:srcCompat="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="OFFER AVAILABLE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dialograte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/dialogimg"
+        android:layout_marginStart="15dp"
+android:background="@drawable/striketext"
+        android:layout_marginTop="35dp"
+        android:text="RS 7000" />
+
+    <TextView
+        android:id="@+id/dialogdiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dialograte"
+        android:layout_alignBottom="@+id/dialograte"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_marginEnd="14dp"
+        android:text="RS 3500"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dialograte"
+        android:layout_marginTop="17dp"
+        android:background="@color/grey" />
+
+    <Button
+        android:id="@+id/dialogbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:text="SHOP NOW"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
